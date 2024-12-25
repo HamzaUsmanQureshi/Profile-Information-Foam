@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <h2>Profile Information</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="fathername">Father Name:</label>
+                <input type="text" id="fathername" name="fathername" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio:</label>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Courses Interested In:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="courses[]" value="html"> HTML</label>
+                    <label><input type="checkbox" name="courses[]" value="css"> CSS</label>
+                    <label><input type="checkbox" name="courses[]" value="javascript"> JavaScript</label>
+                    <label><input type="checkbox" name="courses[]" value="react"> React</label>
+                    <label><input type="checkbox" name="courses[]" value="python"> Python</label>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
